@@ -1,0 +1,58 @@
+{
+  "indian_drugs": {
+    "category": "indian_drugs",
+    "total": 5,
+    "correct": 1,
+    "accuracy": 0.2,
+    "avg_confidence": 0.33508835434913636,
+    "time_taken": 3.5193566300652246
+  },
+  "tropical_disease": {
+    "category": "tropical_disease",
+    "total": 5,
+    "correct": 2,
+    "accuracy": 0.4,
+    "avg_confidence": 0.2877787172794342,
+    "time_taken": 3.5193566300652246
+  },
+  "ayush": {
+    "category": "ayush",
+    "total": 4,
+    "correct": 1,
+    "accuracy": 0.25,
+    "avg_confidence": 0.32176150381565094,
+    "time_taken": 2.8154853040521797
+  },
+  "indian_exam": {
+    "category": "indian_exam",
+    "total": 4,
+    "correct": 1,
+    "accuracy": 0.25,
+    "avg_confidence": 0.3504970297217369,
+    "time_taken": 2.8154853040521797
+  },
+  "clinical": {
+    "category": "clinical",
+    "total": 2,
+    "correct": 2,
+    "accuracy": 1.0,
+    "avg_confidence": 0.3295489251613617,
+    "time_taken": 1.4077426520260898
+  },
+  "hindi_medical": {
+    "category": "hindi_medical",
+    "total": 2,
+    "correct": 1,
+    "accuracy": 0.5,
+    "avg_confidence": 0.3048894554376602,
+    "time_taken": 1.4077426520260898
+  },
+  "overall": {
+    "category": "overall",
+    "total": 22,
+    "correct": 8,
+    "accuracy": 0.36363636363636365,
+    "avg_confidence": 0.3214657387950204,
+    "time_taken": 15.485169172286987
+  }
+}

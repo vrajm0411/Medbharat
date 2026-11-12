@@ -1,0 +1,40 @@
+{
+  "global_step": 70396,
+  "current_phase": 6,
+  "phase_step": 17316,
+  "tokens_seen": 144171008,
+  "best_loss": 8.174057420094808,
+  "config": {
+    "vocab_size": 48000,
+    "max_seq_len": 256,
+    "d_model": 512,
+    "pad_token_id": 0,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    "n_shared_layers": 6,
+    "n_heads": 8,
+    "n_medical_heads": 2,
+    "head_dim": 64,
+    "intermediate_size": 2048,
+    "n_experts": 6,
+    "n_expert_layers": 4,
+    "top_k_experts": 2,
+    "expert_intermediate_size": 1024,
+    "router_aux_loss_weight": 0.01,
+    "n_languages": 3,
+    "rms_norm_eps": 1e-06,
+    "rope_theta": 10000.0,
+    "dropout": 0.0,
+    "attention_dropout": 0.0,
+    "gradient_checkpointing": false,
+    "use_cache": false,
+    "expert_names": [
+      "diagnosis",
+      "pharmacology",
+      "treatment",
+      "ayush",
+      "anatomy",
+      "general"
+    ]
+  }
+}

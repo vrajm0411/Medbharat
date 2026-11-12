@@ -1,0 +1,47 @@
+{
+  "displayName": "medbharat-1-inference",
+  "compartmentId": "<COMPARTMENT_OCID>",
+  "availabilityDomain": "<AD_NAME>",
+  "shape": "CI.Standard.A1.Flex",
+  "shapeConfig": {
+    "ocpus": 4,
+    "memoryInGBs": 24
+  },
+  "containers": [
+    {
+      "displayName": "medbharat-server",
+      "imageUrl": "<REGION>.ocir.io/<NAMESPACE>/medbharat-1:latest",
+      "environmentVariables": {
+        "MEDBHARAT_WEIGHTS": "/app/weights",
+        "MEDBHARAT_TOKENIZER": "/app/weights/medbharat_tokenizer.json",
+        "MEDBHARAT_DEVICE": "cpu",
+        "PORT": "8000"
+      },
+      "resourceConfig": {
+        "vcpusLimit": 4,
+        "memoryLimitInGBs": 24
+      },
+      "healthChecks": [
+        {
+          "healthCheckType": "HTTP",
+          "port": 8000,
+          "path": "/health",
+          "intervalInSeconds": 30,
+          "timeoutInSeconds": 10,
+          "failureThreshold": 3
+        }
+      ]
+    }
+  ],
+  "vnics": [
+    {
+      "subnetId": "<SUBNET_OCID>",
+      "isPublicIpAssigned": true
+    }
+  ],
+  "gracefulShutdownTimeoutInSeconds": 30,
+  "freeformTags": {
+    "project": "medbharat",
+    "model_version": "1.0"
+  }
+}
